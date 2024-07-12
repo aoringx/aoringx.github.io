@@ -598,8 +598,12 @@ video {
   border-width: 2px;
 }
 
-.border-r-2 {
-  border-right-width: 2px;
+.border-r-4 {
+  border-right-width: 4px;
+}
+
+.border-r-8 {
+  border-right-width: 8px;
 }
 
 .border-black {
@@ -654,10 +658,14 @@ video {
   line-height: 1;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .pfpimage {
   display: block;
   margin: 20px auto;
-  border: 1px solid #000;
+  border: 0px;
   width: 200px;
 }
 
@@ -670,8 +678,6 @@ body{
   font-size: 20px;
   text-align: left;
   line-height: normal;
-  border-width: 0px;
-  border-color: transparent;
 }
 
 h1{
