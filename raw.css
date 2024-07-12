@@ -18,6 +18,8 @@ body{
     font-size: 20px;
     text-align: left;
     line-height: normal;
+    border-width: 0px;
+    border-color: transparent;
 }
 
 h1{
