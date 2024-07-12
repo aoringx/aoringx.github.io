@@ -602,10 +602,6 @@ video {
   border-right-width: 4px;
 }
 
-.border-r-8 {
-  border-right-width: 8px;
-}
-
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -656,10 +652,6 @@ video {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
-}
-
-.italic {
-  font-style: italic;
 }
 
 .pfpimage {
