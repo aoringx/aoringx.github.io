@@ -5,7 +5,7 @@
 .pfpimage {
     display: block;
     margin: 20px auto;
-    border: 1px solid #000;
+    border: 0px;
     width: 200px;
 }
 
