@@ -657,7 +657,8 @@ video {
 .pfpimage {
   display: block;
   margin: 20px auto;
-  border: 0px;
+  border: 1px solid white;
+  border-radius: 50%;
   width: 200px;
 }
 
@@ -693,6 +694,39 @@ button{
   margin: 20px;
 }
 
-footer{
+.footerText{
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  display: inline-block;
 }
 
+.footerText ul{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.linkedinLogo{
+  color: transparent;
+  font-size: 0;
+  background-image: url("image/linkedin.png");
+  background-size: 32px;
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding: 8px;
+}
+
+.emailLogo{
+  color: transparent;
+  font-size: 0;
+  background-image: url("image/email.png");
+  background-size: 32px;
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding: 8px;
+}
