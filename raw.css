@@ -23,8 +23,9 @@ body{
 }
 
 h1{
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     font-size: 20px;
 }
 
@@ -84,6 +85,18 @@ a:hover{
     color: transparent;
     font-size: 0;
     background-image: url("image/email.png");
+    background-size: 32px;
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding: 8px;
+}
+
+.githubLogo{
+    color: transparent;
+    font-size: 0;
+    background-image: url("image/github.png");
     background-size: 32px;
     height: 40px;
     width: 40px;
