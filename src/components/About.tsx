@@ -3,7 +3,7 @@ import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
 import Chip from '@mui/material/Chip';
-import '../assets/styles/Expertise.scss';
+import '../assets/styles/About.scss';
 
 const labelsFirst = [
     "React",
@@ -41,12 +41,24 @@ const labelsThird = [
     "Streamlit",
 ];
 
-function Expertise() {
+function About() {
     return (
-    <div className="container" id="expertise">
+    <div className="container" id="about">
         <div className="skills-container">
-            <h1>Expertise</h1>
+            <h1>About</h1>
+            <p className="about">
+                Welcome to my home page! <br></br>
+                I am a senior undergraduate student majoring in Computer Science at the University of Michigan. <br></br>
+                My research interest is in Machine Learning and Natural Language Processing, and I currently serve as a research assistant at the LAUNCH Lab. 
+                I am also passionate about embedded systems and computer security. <br></br>
+                I am fluent in C++ and Python, with proficiency in web development. <br></br>
+                In my free time, I enjoy swimming, badminton, dancing, and singing.
+            </p>
+
             <div className="skills-grid">
+
+                
+
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
                     <h3>Full Stack Web Development</h3>
@@ -88,4 +100,4 @@ function Expertise() {
     );
 }
 
-export default Expertise;
+export default About;
