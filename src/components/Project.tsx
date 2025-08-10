@@ -20,8 +20,8 @@ function Project() {
             </div>
             
             <div className="project">
-                {/* <a href="" target="_blank" rel="noreferrer"><img src={} className="zoom" alt="thumbnail" width="100%"/></a> */}
-                <a href="https://github.com/AoringX" target="_blank" rel="noreferrer"><h2>EVie</h2></a>
+                {/* <a href="https://github.com/Edwardobird/ECE297Project" target="_blank" rel="noreferrer"><img src={} className="zoom" alt="thumbnail" width="100%"/></a> */}
+                <a href="https://github.com/Edwardobird/ECE297Project" target="_blank" rel="noreferrer"><h2>EVie</h2></a>
                 <p>Developed a Geographic Information System in C++ for electric vehicle users across multiple regions by extracting real-world map data from StreetsDatabase and OpenStreetMapDatabase.</p>
             </div>
             
