@@ -1,8 +1,8 @@
 {
-  "name": "website",
+  "name": "aoringx.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aoringx.github.io/aoringx.github.io",
+  "homepage": "https://aoringx.github.io",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.11.4",
