@@ -1,0 +1,21 @@
+.resume-container {
+
+  font-size: 1em;
+  vertical-align: middle;
+  margin-right: 5px;
+
+  button {
+    float: right;
+    background-color: white;
+    color: #050f0b;
+  }
+
+  button:hover {
+    background-color: #0300caff;
+    color: white;
+  }
+
+  fieldset {
+    background-color: white;
+  }
+}

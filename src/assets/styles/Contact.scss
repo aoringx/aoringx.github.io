@@ -5,7 +5,29 @@
 }
 
 .contact-form {
-  padding-top: 20px;
+  padding: 20px;
+  padding-bottom: 50px;
+  background-color: white;
+
+  .MuiTextField-root {
+    .MuiOutlinedInput-root {
+      position: relative;
+      z-index: 1; // input
+      
+      .MuiOutlinedInput-notchedOutline {
+        z-index: 0; // fieldset
+      }
+      
+      .MuiInputBase-input {
+        position: relative;
+        z-index: 1; // text
+      }
+    }
+
+    .MuiInputLabel-root {
+      z-index: 2;
+    }
+  }
 
   button {
     float: right;
@@ -14,7 +36,7 @@
   }
 
   button:hover {
-    background-color: #5000ca;
+    background-color: #0300caff;
     color: white;
   }
 

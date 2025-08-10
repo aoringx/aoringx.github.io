@@ -30,6 +30,10 @@
         svg {
             font-size: 1.8em;
         }
+
+        &:hover svg:hover {
+            color: #0300caff;
+        }
     }
 
     .mobile_social_icons {
