@@ -24,7 +24,7 @@ function Timeline() {
             <h4 className="vertical-timeline-element-subtitle">Ann Arbor, MI, USA</h4>
             <p>
               Faculty of Applied Science and Engineering, Department of Electrical and Computer Engineering, Bachelor of Applied Science in Computer Engineering <br></br>
-              Cumulative GPA: 3.85/4
+              Cumulative GPA: 3.972/4
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -37,7 +37,7 @@ function Timeline() {
             <h4 className="vertical-timeline-element-subtitle">Toronto, ON, Canada</h4>
             <p>
               College of Engineering, Department of Electrical Engineering and Computer Science, Bachelor of Science in Engineering in Computer Science and Minor in Electrical Engineering <br></br>
-              Cumulative GPA: 3.972/4
+              Cumulative GPA: 3.85/4
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>

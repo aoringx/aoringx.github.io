@@ -1,44 +1,38 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { faBrain , faRobot} from '@fortawesome/free-solid-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/About.scss';
 
 const labelsFirst = [
+    "Python",
+    "NLP",
+    "Gemini",
+    "Hugging Face"
+];
+
+const labelsSecond = [
     "React",
-    "TypeScript",
+    "Tailwind CSS",
+    "Bootstrap",
+    "Flask",
+    "Typescript",
     "JavaScript",
     "HTML5",
     "CSS3",
     "SASS",
-    "Flask",
     "Python",
-    "SQL",
-    "PostgreSQL",
-    "Postman"
-];
-
-const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+    "Git"
 ];
 
 const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+    "Embedded C",
+    "Arduino",
+    "Verilog",
+    "FPGA",
+    "NIOS II",
 ];
 
 function About() {
@@ -57,12 +51,10 @@ function About() {
 
             <div className="skills-grid">
 
-                
-
                 <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <FontAwesomeIcon icon={faBrain} size="3x"/>
+                    <h3>Large Language Model Evaluation</h3>
+                    <p>I parsed competitive-level coding problems, evaluated LLM performances against contestants, and created a open-source benchmark for LLM training.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -72,9 +64,9 @@ function About() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <FontAwesomeIcon icon={faReact} size="3x"/>
+                    <h3>Full-stack Web Development</h3>
+                    <p>I have developed full-stack web applications with modern libraries and frameworks including React and Flask. I also have experience with incorporating LLM responses, video conferencing, secure data storage and geospatial mapping, etc.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
@@ -84,9 +76,9 @@ function About() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                    <FontAwesomeIcon icon={faRobot} size="3x"/>
+                    <h3>Embeddded Stystem Design</h3>
+                    <p>I designed embedded video games on FPGA boards, implementing display, controls, and sound functionalities. I also programmed autonomous Arduino robots</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (
