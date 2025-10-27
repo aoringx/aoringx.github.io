@@ -33,7 +33,7 @@ function Timeline() {
               College of Engineering, Department of Electrical Engineering and
               Computer Science, Bachelor of Science in Engineering in Computer
               Science and Minor in Electrical Engineering <br></br>
-              Cumulative GPA: 3.972/4
+              GPA: 3.972/4
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -52,7 +52,7 @@ function Timeline() {
               Faculty of Applied Science and Engineering, Department of
               Electrical and Computer Engineering, Bachelor of Applied Science
               in Computer Engineering <br></br>
-              Cumulative GPA: 3.85/4
+              GPA: 3.85/4
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>

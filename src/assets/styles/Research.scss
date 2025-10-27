@@ -1,0 +1,47 @@
+.research-container {
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#research {
+  .research-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+
+  .research-row {
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+
+    .research-row-line {  color: #0d1116; }
+    .research-title { line-height: 1.8; font-size: 1.8rem; color: #0d1116; }
+    .research-conference { line-height: 1.5; font-size: 1rem; color: #333333; }
+    .research-authors { line-height: 1.5; font-size: 1rem; color: #444444; }
+
+    .research-links {
+      line-height: 1.5;
+      display: flex;
+      font-size: 0.9rem;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+
+      .research-link {
+        color: #0300caff;
+        text-decoration: underline;
+      }
+
+      .no-links { color: #666666;}
+    }
+  }
+
+  @media (max-width: 700px) {
+    .research-list { grid-gap: 30px; }
+  }
+}

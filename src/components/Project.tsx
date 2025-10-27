@@ -1,4 +1,10 @@
 import React from "react";
+import vip from "../assets/images/vip.png";
+import classifier from "../assets/images/classifier.png";
+import evie from "../assets/images/evie.png";
+import hive from "../assets/images/hive.jpg";
+import lockedown from "../assets/images/lockedown.jpeg";
+import yoshi from "../assets/images/yoshi.png";
 import "../assets/styles/Project.scss";
 
 function Project() {
@@ -7,7 +13,55 @@ function Project() {
       <h1>Projects</h1>
       <div className="projects-grid">
         <div className="project">
-          {/* <a href="https://github.com/AoringX/100-TheHive" target="_blank" rel="noreferrer"><img src={} className="zoom" alt="thumbnail" width="100%"/></a> */}
+          <a href="" target="_blank" rel="noreferrer">
+            <img src={vip} className="zoom" alt="thumbnail" width="100%" />
+          </a>
+          <a href="" target="_blank" rel="noreferrer">
+            <h2>VIP Partners Website</h2>
+          </a>
+          <p>
+            Developed and deployed a HIPAA-compliant, mobile-friendly,
+            Full-stack web platform with React and Flask, providing Nurse Health
+            Coaching, Educational Content, and Personalized Community Resources
+            for pregnant people and infant caregivers.
+          </p>
+        </div>
+
+        <div className="project">
+          <a
+            href="https://github.com/aoringx/LockeDown"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={lockedown}
+              className="zoom"
+              alt="thumbnail"
+              width="100%"
+            />
+          </a>
+          <a
+            href="https://github.com/aoringx/LockeDown"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h2>Lockedown</h2>
+          </a>
+          <p>
+            Created a real-time posture and productivity monitoring platform
+            with the YOLOv8m-pose model and OpenCV, integrating MemryX
+            accelerators to optimize video inference.
+          </p>
+        </div>
+
+        <div className="project">
+          <a
+            href="https://github.com/AoringX/100-TheHive"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={hive} className="zoom" alt="thumbnail" width="100%" />
+          </a>
           <a
             href="https://github.com/AoringX/100-TheHive"
             target="_blank"
@@ -23,7 +77,18 @@ function Project() {
         </div>
 
         <div className="project">
-          {/* <a href="https://github.com/AoringX/298-MLClassifier" target="_blank" rel="noreferrer"><img src={} className="zoom" alt="thumbnail" width="100%"/></a> */}
+          <a
+            href="https://github.com/AoringX/298-MLClassifier"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={classifier}
+              className="zoom"
+              alt="thumbnail"
+              width="100%"
+            />
+          </a>
           <a
             href="https://github.com/AoringX/298-MLClassifier"
             target="_blank"
@@ -40,9 +105,15 @@ function Project() {
         </div>
 
         <div className="project">
-          {/* <a href="https://github.com/Edwardobird/ECE297Project" target="_blank" rel="noreferrer"><img src={} className="zoom" alt="thumbnail" width="100%"/></a> */}
           <a
-            href="https://github.com/Edwardobird/ECE297Project"
+            href="https://github.com/aoringx/297-EVie"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={evie} className="zoom" alt="thumbnail" width="100%" />
+          </a>
+          <a
+            href="https://github.com/aoringx/297-EVie"
             target="_blank"
             rel="noreferrer"
           >
@@ -56,7 +127,13 @@ function Project() {
         </div>
 
         <div className="project">
-          {/* <a href="https://github.com/AoringX/243-SuperYoshi" target="_blank" rel="noreferrer"><img src={} className="zoom" alt="thumbnail" width="100%"/></a> */}
+          <a
+            href="https://github.com/AoringX/243-SuperYoshi"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={yoshi} className="zoom" alt="thumbnail" width="100%" />
+          </a>
           <a
             href="https://github.com/AoringX/243-SuperYoshi"
             target="_blank"

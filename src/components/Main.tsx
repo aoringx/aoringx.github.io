@@ -2,7 +2,8 @@ import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
-import ProfilePicture from "../assets/images/pfp2.jpeg";
+import ProfilePicture from "../assets/images/pfp.jpeg";
+import SchoolIcon from "@mui/icons-material/School";
 import "../assets/styles/Main.scss";
 
 function Main() {
@@ -26,7 +27,14 @@ function Main() {
               <GitHubIcon />
             </a>
             <a
-              href="https://www.linkedin.com/in/aaron-xiong-um/"
+              href="https://scholar.google.com/citations?user=g9trRJMAAAAJ"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <SchoolIcon />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/aaron-xiong-um"
               target="_blank"
               rel="noreferrer"
             >
@@ -37,7 +45,7 @@ function Main() {
             </a>
           </div>
           <h1>Aaron Xiong</h1>
-          <p>Software Developer</p>
+          <p>Computer Science Researcher</p>
 
           <div className="mobile_social_icons">
             <a
