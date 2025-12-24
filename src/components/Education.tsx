@@ -33,7 +33,7 @@ function Timeline() {
               College of Engineering, Department of Electrical Engineering and
               Computer Science, Bachelor of Science in Engineering in Computer
               Science and Minor in Electrical Engineering <br></br>
-              GPA: 3.972/4
+              GPA: 3.94/4
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement

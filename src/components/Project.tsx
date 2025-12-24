@@ -1,4 +1,5 @@
 import React from "react";
+import armed from "../assets/images/armed.jpeg";
 import vip from "../assets/images/vip.png";
 import classifier from "../assets/images/classifier.png";
 import evie from "../assets/images/evie.png";
@@ -13,10 +14,33 @@ function Project() {
       <h1>Projects</h1>
       <div className="projects-grid">
         <div className="project">
-          <a href="" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/AoringX/Armed"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={armed} className="zoom" alt="thumbnail" width="100%" />
+          </a>
+          <a
+            href="https://github.com/AoringX/Armed"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h2>Armed</h2>
+          </a>
+          <p>
+            Designed an auto-aim embedded system for a projectile launcher using
+            an STM32 Nucleo-L4R5ZI-P MCU, interfacing an IR Camera for target
+            detection and providing real-time aim guidance with haptics, LEDs,
+            and sound.
+          </p>
+        </div>
+
+        <div className="project">
+          <a href="https://aaronxiong.com/" target="_blank" rel="noreferrer">
             <img src={vip} className="zoom" alt="thumbnail" width="100%" />
           </a>
-          <a href="" target="_blank" rel="noreferrer">
+          <a href="https://aaronxiong.com/" target="_blank" rel="noreferrer">
             <h2>VIP Partners Website</h2>
           </a>
           <p>

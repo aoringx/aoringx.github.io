@@ -6,7 +6,7 @@ import { faBrain, faRobot } from "@fortawesome/free-solid-svg-icons";
 import Chip from "@mui/material/Chip";
 import "../assets/styles/About.scss";
 
-const labelsFirst = ["Python", "ML", "NLP", "Gemini", "Hugging Face"];
+const labelsFirst = ["Python", "ML", "NLP", "PyTorch", "Numpy", "Pandas"];
 
 const labelsSecond = [
   "React",
@@ -25,10 +25,11 @@ const labelsSecond = [
 
 const labelsThird = [
   "ARMv7",
+  "STM32",
+  "FPGA",
   "Embedded C",
   "Arduino",
   "Verilog",
-  "FPGA",
   "NIOS II",
 ];
 
@@ -89,7 +90,7 @@ function About() {
           . I am also passionate about designing user-centered embedded systems
           and exploring novel designs for computer architectures. <br></br>{" "}
           Outside of academics, I'm known as Bboy Opamp. I also enjoy swimming,
-          snowboarding, and singing.
+          snowboarding, badminton, and tennis.
         </p>
 
         <div className="skills-grid">
@@ -130,9 +131,10 @@ function About() {
             <FontAwesomeIcon icon={faRobot} size="3x" />
             <h3>Embedded System Design</h3>
             <p>
-              I designed embedded video games on FPGA boards, implementing
-              display, controls, and sound functionalities. I also programmed
-              autonomous Arduino robots.
+              I designed embedded systems on FPGA boards and STM32
+              microcontrollers, and I am familiar with interfacing various
+              sensors and output peripherals. I also programmed autonomous
+              Arduino robots.
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>
