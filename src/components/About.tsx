@@ -6,7 +6,16 @@ import { faBrain, faRobot } from "@fortawesome/free-solid-svg-icons";
 import Chip from "@mui/material/Chip";
 import "../assets/styles/About.scss";
 
-const labelsFirst = ["Python", "ML", "NLP", "PyTorch", "Numpy", "Pandas"];
+const labelsFirst = [
+  "Python",
+  "PyTorch",
+  "NumPy",
+  "Pandas",
+  "Machine Learning",
+  "Deep Learning",
+  "LLMs",
+  "NLP",
+];
 
 const labelsSecond = [
   "React",
@@ -24,13 +33,15 @@ const labelsSecond = [
 ];
 
 const labelsThird = [
+  "C/C++",
+  "SystemVerilog",
   "ARMv7",
   "STM32",
+  "ESP32",
   "FPGA",
-  "Embedded C",
-  "Arduino",
-  "Verilog",
-  "NIOS II",
+  "Embedded Systems",
+  "Computer Architecture",
+  "Linux",
 ];
 
 function About() {
@@ -39,7 +50,7 @@ function About() {
       <div className="skills-container">
         <h1>About</h1>
         <p className="about">
-          Welcome to my home page! <br></br>I am a junior undergraduate student
+          Welcome to my home page! <br></br>I am a senior undergraduate student
           majoring in{" "}
           <a
             href="https://cse.engin.umich.edu"
@@ -60,25 +71,44 @@ function About() {
           </a>{" "}
           at{" "}
           <a
-            href="https://ece.engin.umich.edu"
+            href="https://umich.edu"
             target="_blank"
             rel="noopener noreferrer"
             className="link"
           >
             the University of Michigan
           </a>
-          . <br></br> My research interest lies in Machine Learning and its
-          applications to Natural Language Processing and computer systems, and
-          I currently work as a student researcher at{" "}
+          . <br></br>My interests lie in novel computer architectures for ML
+          optimization and ML-driven embedded systems with a focus on building
+          portable and user-centered computer devices. <br></br>I'm currently
+          working as a student researcher in the{" "}
+          <a
+            href="https://theisclab.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+          >
+            ISC Lab
+          </a>{" "}
+          under Professor{" "}
+          <a
+            href="https://alansonsample.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+          >
+            Alanson Sample
+          </a>
+          , and I previously conducted research in the{" "}
           <a
             href="https://launch.eecs.umich.edu"
             target="_blank"
             rel="noopener noreferrer"
             className="link"
           >
-            the LAUNCH Lab
-          </a>
-          , led by Professor{" "}
+            LAUNCH Lab
+          </a>{" "}
+          led by Professor{" "}
           <a
             href="https://web.eecs.umich.edu/~wangluxy/index.html"
             target="_blank"
@@ -87,20 +117,20 @@ function About() {
           >
             Lu Wang
           </a>
-          . I am also passionate about designing user-centered embedded systems
-          and exploring novel designs for computer architectures. <br></br>{" "}
-          Outside of academics, I'm known as Bboy Opamp. I also enjoy swimming,
-          snowboarding, badminton, and tennis.
+          . My ongoing research work explores embedded systems for processing
+          audio signals from microphone arrays to perform sound classification
+          and analysis. <br></br>Outside of academics, I am a free-style hip-hop
+          dancer, and I also enjoy swimming, snowboarding, and singing.
         </p>
 
         <div className="skills-grid">
           <div className="skill">
             <FontAwesomeIcon icon={faBrain} size="3x" />
-            <h3>Large Language Model Training</h3>
+            <h3>Machine Learning</h3>
             <p>
-              I parsed competitive-level coding problems, evaluated LLM
-              performances against contestants, and created an open-source
-              benchmark for LLM training.
+              I built Machine Learning systems to process medical imaging data.
+              I also curated training datasets, benchmarked leading LLMs, and
+              developed ML architectures for domain adversarial training.
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>
@@ -114,10 +144,9 @@ function About() {
             <FontAwesomeIcon icon={faReact} size="3x" />
             <h3>Full-stack Web Development</h3>
             <p>
-              I have developed full-stack web applications with modern libraries
-              and frameworks. I also have experience with incorporating LLM
-              responses, video conferencing, secure data storage and geospatial
-              mapping, etc.
+              I developed full-stack platforms that integrate modern web
+              technologies with AI-assisted workflows, utilizing databases,
+              APIs, and AI agents to create seamless user experiences.
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>
@@ -129,12 +158,11 @@ function About() {
 
           <div className="skill">
             <FontAwesomeIcon icon={faRobot} size="3x" />
-            <h3>Embedded System Design</h3>
+            <h3>Embedded Systems & Computer Architecture</h3>
             <p>
-              I designed embedded systems on FPGA boards and STM32
-              microcontrollers, and I am familiar with interfacing various
-              sensors and output peripherals. I also programmed autonomous
-              Arduino robots.
+              I designed hardware and embedded systems, ranging from wearable
+              devices to out-of-order CPU architectures and FPGA-based compuiter
+              systems.
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>

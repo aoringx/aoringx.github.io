@@ -1,4 +1,6 @@
 import React from "react";
+import brain from "../assets/images/brain.png";
+import processor from "../assets/images/processor.png";
 import armed from "../assets/images/armed.jpeg";
 import vip from "../assets/images/vip.png";
 import classifier from "../assets/images/classifier.png";
@@ -15,6 +17,51 @@ function Project() {
       <div className="projects-grid">
         <div className="project">
           <a
+            href="https://github.com/aoringx/eecs545-brain-mri"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={brain} className="zoom" alt="thumbnail" width="100%" />
+          </a>
+          <a
+            href="https://github.com/aoringx/eecs545-brain-mri"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h2>Site-Invariant Brain Age Estimator</h2>
+          </a>
+          <p className="date">Jan 2026 - Apr 2026</p>
+          <p>
+            Developed a robust Python machine learning pipeline utilizing
+            Domain-Adversarial Training and deep ensembles to accurately predict
+            chronological brain age from structural MRI scans across 64
+            different scanner configurations.
+          </p>
+        </div>
+
+        <div className="project">
+          <a href="https://aaronxiong.com/" target="_blank" rel="noreferrer">
+            <img
+              src={processor}
+              className="zoom"
+              alt="thumbnail"
+              width="100%"
+            />
+          </a>
+          <a href="https://aaronxiong.com/" target="_blank" rel="noreferrer">
+            <h2>Superscalar Processor Design</h2>
+          </a>
+          <p className="date">Mar 2026 - Apr 2026</p>
+          <p>
+            Designed a 2-way superscalar, out-of-order RISC processor in
+            SystemVerilog, optimizing its architecture with an advanced branch
+            predictor and set-associative instruction cache to successfully
+            reduce average CPI from 2.06 to 1.60.
+          </p>
+        </div>
+
+        <div className="project">
+          <a
             href="https://github.com/AoringX/Armed"
             target="_blank"
             rel="noreferrer"
@@ -28,11 +75,12 @@ function Project() {
           >
             <h2>Armed</h2>
           </a>
+          <p className="date">Oct 2025 - Dec 2025</p>
           <p>
-            Designed an auto-aim embedded system for a projectile launcher using
-            an STM32 Nucleo-L4R5ZI-P MCU, interfacing an IR Camera for target
-            detection and providing real-time aim guidance with haptics, LEDs,
-            and sound.
+            Designed an auto-aiming embedded system for a projectile launcher
+            using an STM32 MCU, developing the interrupt-driven firmware, custom
+            3D-printed mounts, and wireless multimodal haptic feedback
+            mechanisms.
           </p>
         </div>
 
@@ -43,6 +91,7 @@ function Project() {
           <a href="https://aaronxiong.com/" target="_blank" rel="noreferrer">
             <h2>VIP Partners Website</h2>
           </a>
+          <p className="date">Jan 2025 - Dec 2025</p>
           <p>
             Developed and deployed a HIPAA-compliant, mobile-friendly,
             Full-stack web platform with React and Flask, providing Nurse Health
@@ -69,12 +118,14 @@ function Project() {
             target="_blank"
             rel="noreferrer"
           >
-            <h2>Lockedown</h2>
+            <h2>LockeDown</h2>
           </a>
+          <p className="date">Sep 2025</p>
           <p>
-            Created a real-time posture and productivity monitoring platform
-            with the YOLOv8m-pose model and OpenCV, integrating MemryX
-            accelerators to optimize video inference.
+            Developed a full-stack posture and productivity monitoring platform
+            using React, FastAPI, and YOLOv8 computer vision accelerated by
+            MemryX, integrating the Gemini LLM for session analysis and gamified
+            user dashboards.
           </p>
         </div>
 
@@ -91,12 +142,14 @@ function Project() {
             target="_blank"
             rel="noreferrer"
           >
-            <h2>The Hivebot</h2>
+            <h2>The Hive</h2>
           </a>
+          <p className="date">Jan 2025 - Apr 2025</p>
           <p>
-            Designed an Arduino-based autonomous robot that can parse CSV
-            blueprints, communicate with serial ports through PySerial, and
-            collaboratively perform transportation tasks on a grid.
+            Led software integration for an autonomous construction robot team,
+            developing Python path planning, C++ sensor controls, and a
+            multi-agent simulation for dynamic task allocation and collision
+            avoidance.
           </p>
         </div>
 
@@ -120,11 +173,12 @@ function Project() {
           >
             <h2>Fake News Classifier</h2>
           </a>
+          <p className="date">Sep 2024 - Dec 2024</p>
           <p>
-            Implemented a Naive Bayes Classifier in C++ to identify
-            misinformation in news articles using a training dataset of 12,000+
-            articles. Created a preprocessing pipeline with text normalization,
-            N-gram modeling, and Word Stemming to reach an accuracy of 83.8%.{" "}
+            Designed a C++ Naive Bayes machine learning classifier to identify
+            misinformation across 12,000+ articles, building a custom NLP
+            preprocessing pipeline with Text Normalization, N-gram Modeling, and
+            Word Stemming to improve model accuracy from 62% to 83.8%.
           </p>
         </div>
 
@@ -143,10 +197,12 @@ function Project() {
           >
             <h2>EVie</h2>
           </a>
+          <p className="date">Jan 2024 - Apr 2024</p>
           <p>
-            Developed a Geographic Information System in C++ for electric
-            vehicle users across multiple regions by extracting real-world map
-            data from StreetsDatabase and OpenStreetMapDatabase.
+            Co-developed a C++ Geographic Information System for electric
+            vehicles that integrated OpenStreetMap and live weather data,
+            utilizing A* Search and TSP algorithms to optimize navigation routes
+            and rank in the top 15 of 91 submissions.
           </p>
         </div>
 
@@ -165,10 +221,12 @@ function Project() {
           >
             <h2>Super Yoshi</h2>
           </a>
+          <p className="date">Jan 2024 - Apr 2024</p>
           <p>
-            Created a voice-controlled 2D platformer Game in Embedded C on a
-            DE1-SoC FPGA board with double-buffered VGA display and PS/2
-            keyboard controls.
+            Engineered a voice-controlled 2D platformer game in Embedded C on a
+            DE1-SoC FPGA, utilizing finite state machines and double-buffered
+            VGA integration to deliver a seamless, 60 FPS hands-free gaming
+            experience.
           </p>
         </div>
       </div>
