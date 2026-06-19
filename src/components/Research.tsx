@@ -12,7 +12,7 @@ const RESEARCH_ROWS: ResearchItem[] = [
   {
     title:
       "LiveOIBench: Can Large Language Models Outperform Human Contestants in Informatics Olympiads?",
-    conference: "",
+    conference: "ICML 2026",
     authors:
       "Kaijian Zou, Aaron Xiong, Yunxiang Zhang, Xinliang Frederick Zhang, Yueqi Ren, Jirong Yang, Ayoung Lee, Shitanshu Bhushan, Lu Wang",
     links: [

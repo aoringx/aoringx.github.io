@@ -5,9 +5,9 @@ import armed from "../assets/images/armed.jpeg";
 import vip from "../assets/images/vip.png";
 import classifier from "../assets/images/classifier.png";
 import evie from "../assets/images/evie.png";
-import hive from "../assets/images/hive.jpg";
 import lockedown from "../assets/images/lockedown.jpeg";
 import yoshi from "../assets/images/yoshi.png";
+import projectPlaceholder from "../assets/images/project-placeholder.svg";
 import "../assets/styles/Project.scss";
 
 function Project() {
@@ -15,6 +15,47 @@ function Project() {
     <div className="projects-container" id="projects">
       <h1>Projects</h1>
       <div className="projects-grid">
+        <div className="project">
+          <a href="https://github.com/aoringx/SLRAgent" target="_blank" rel="noreferrer">
+            <img
+              src={projectPlaceholder}
+              className="zoom"
+              alt="SLR Agent project placeholder"
+              width="100%"
+            />
+          </a>
+          <a href="https://github.com/aoringx/SLRAgent" target="_blank" rel="noreferrer">
+            <h2>SLR Agent</h2>
+          </a>
+          <p className="date">Jun 2026 - Present</p>
+          <p>
+            Built a research automation tool that streamlines systematic
+            literature reviews by collecting paper metadata, enriching results
+            with abstracts, and organizing full-paper context for deeper
+            analysis.
+          </p>
+        </div>
+
+        <div className="project">
+          <a href="https://github.com/aoringx/VocabReader" target="_blank" rel="noreferrer">
+            <img
+              src={projectPlaceholder}
+              className="zoom"
+              alt="Vocabulary Reader project placeholder"
+              width="100%"
+            />
+          </a>
+          <a href="https://github.com/aoringx/VocabReader" target="_blank" rel="noreferrer">
+            <h2>Vocabulary Reader</h2>
+          </a>
+          <p className="date">Jun 2026</p>
+          <p>
+            Built a local study tool that turns vocabulary lists into clean
+            audio review material, making it easier to practice definitions
+            through repeatable listening sessions.
+          </p>
+        </div>
+
         <div className="project">
           <a
             href="https://github.com/aoringx/eecs545-brain-mri"
@@ -129,7 +170,7 @@ function Project() {
           </p>
         </div>
 
-        <div className="project">
+        {/* <div className="project">
           <a
             href="https://github.com/AoringX/100-TheHive"
             target="_blank"
@@ -151,7 +192,7 @@ function Project() {
             multi-agent simulation for dynamic task allocation and collision
             avoidance.
           </p>
-        </div>
+        </div> */}
 
         <div className="project">
           <a

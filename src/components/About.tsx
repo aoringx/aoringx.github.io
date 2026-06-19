@@ -120,7 +120,7 @@ function About() {
           . My ongoing research work explores embedded systems for processing
           audio signals from microphone arrays to perform sound classification
           and analysis. <br></br>Outside of academics, I am a free-style hip-hop
-          dancer, and I also enjoy swimming, snowboarding, and singing.
+          dancer, and I also enjoy swimming, badminton, and snowboarding.
         </p>
 
         <div className="skills-grid">

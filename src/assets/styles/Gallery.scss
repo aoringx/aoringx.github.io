@@ -24,13 +24,17 @@
   object-fit: cover;
 }
 
-.zoom {
+.gallery-container .zoom {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   border-radius: 5px;
   transition: transform 0.2s;
   margin: 0 auto;
+  display: block;
 }
 
-.zoom:hover {
+.gallery-container .zoom:hover {
   transform: scale(1.05);
 }
 

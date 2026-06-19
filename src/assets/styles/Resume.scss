@@ -7,11 +7,13 @@
   button {
     float: right;
     background-color: white;
+    border: 1px solid #050f0b;
     color: #050f0b;
   }
 
   button:hover {
     background-color: #0300caff;
+    border-color: #0300caff;
     color: white;
   }
 
