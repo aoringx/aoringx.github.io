@@ -5,6 +5,7 @@ import evie from "../assets/images/evie.png";
 import lockedown from "../assets/images/lockedown.jpeg";
 import processor from "../assets/images/processor.png";
 import projectPlaceholder from "../assets/images/project-placeholder.svg";
+import reciper from "../assets/images/reciper.png";
 import workoutTimer from "../assets/images/timer.png";
 import vip from "../assets/images/vip.png";
 import yoshi from "../assets/images/yoshi.png";
@@ -34,8 +35,8 @@ const projects: ProjectItem[] = [
     date: "July 2026 - Present",
     description:
       "Programmed an online Recipe Crawler that parses the Recipe ingredients, instructions, and tips with LLM and presents the organized information to the user in a readable manner.",
-    url: "https://github.com/aoringx",
-    image: projectPlaceholder,
+    url: "https://github.com/aoringx/RecipeR",
+    image: reciper,
     imageAlt: "Reciper project placeholder",
   },
   {
