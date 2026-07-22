@@ -68,3 +68,20 @@ form {
   width: 100% !important;
   margin-bottom: 15px !important;
 }
+
+.contact-status {
+  margin: 0 0 15px;
+  text-align: right;
+}
+
+.contact-status--sending {
+  color: #444444;
+}
+
+.contact-status--success {
+  color: #166534;
+}
+
+.contact-status--error {
+  color: #b91c1c;
+}

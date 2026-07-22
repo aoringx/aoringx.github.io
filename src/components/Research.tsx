@@ -22,6 +22,21 @@ const RESEARCH_ROWS: ResearchItem[] = [
   },
 ];
 
+const HIGHLIGHTED_AUTHOR = "Aaron Xiong";
+
+function renderAuthors(authors: string) {
+  return authors.split(", ").map((author, index) => (
+    <React.Fragment key={author}>
+      {index > 0 && ", "}
+      {author === HIGHLIGHTED_AUTHOR ? (
+        <strong className="research-author-highlight">{author}</strong>
+      ) : (
+        author
+      )}
+    </React.Fragment>
+  ));
+}
+
 function Research() {
   return (
     <section id="research" className="research-container">
@@ -34,7 +49,7 @@ function Research() {
               {row.conference}
             </div>
             <div className="research-row-line research-authors">
-              {row.authors}
+              {renderAuthors(row.authors)}
             </div>
             <div className="research-row-line research-links">
               {row.links && row.links.length > 0 ? (

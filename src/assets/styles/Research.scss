@@ -20,10 +20,27 @@
     flex-direction: column;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
 
-    .research-row-line {  color: #0d1116; }
-    .research-title { line-height: 1.8; font-size: 1.8rem; color: #0d1116; }
-    .research-conference { line-height: 1.5; font-size: 1rem; color: #333333; }
-    .research-authors { line-height: 1.5; font-size: 1rem; color: #444444; }
+    .research-row-line {
+      color: #0d1116;
+    }
+    .research-title {
+      line-height: 1.8;
+      font-size: 1.8rem;
+      color: #0d1116;
+    }
+    .research-conference {
+      line-height: 1.5;
+      font-size: 1.5rem;
+      color: #1b1b1b;
+    }
+    .research-authors {
+      line-height: 1.5;
+      font-size: 1rem;
+      color: #444444;
+    }
+    .research-author-highlight {
+      font-weight: 600;
+    }
 
     .research-links {
       line-height: 1.5;
@@ -37,11 +54,15 @@
         text-decoration: underline;
       }
 
-      .no-links { color: #666666;}
+      .no-links {
+        color: #666666;
+      }
     }
   }
 
   @media (max-width: 700px) {
-    .research-list { grid-gap: 30px; }
+    .research-list {
+      grid-gap: 30px;
+    }
   }
 }

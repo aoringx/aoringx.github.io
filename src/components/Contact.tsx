@@ -1,10 +1,16 @@
-import React, { useRef, useState } from "react";
-import "../assets/styles/Contact.scss";
+import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import "../assets/styles/Contact.scss";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
 import TextField from "@mui/material/TextField";
+
+const EMAILJS_SERVICE_ID = "service_31at6y6";
+const EMAILJS_TEMPLATE_ID = "template_hun900c";
+const EMAILJS_PUBLIC_KEY = "8WYUMlkRKfv9YjQjY";
+
+type SubmissionStatus = "idle" | "sending" | "success" | "error";
 
 function Contact() {
   const [name, setName] = useState<string>("");
@@ -14,38 +20,50 @@ function Contact() {
   const [nameError, setNameError] = useState<boolean>(false);
   const [emailError, setEmailError] = useState<boolean>(false);
   const [messageError, setMessageError] = useState<boolean>(false);
+  const [submissionStatus, setSubmissionStatus] =
+    useState<SubmissionStatus>("idle");
 
-  const form = useRef();
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
 
-  const sendEmail = (e: any) => {
-    e.preventDefault();
+    const trimmedName = name.trim();
+    const trimmedEmail = email.trim();
+    const trimmedMessage = message.trim();
+    const isNameMissing = trimmedName === "";
+    const isEmailMissing = trimmedEmail === "";
+    const isMessageMissing = trimmedMessage === "";
 
-    setNameError(name === "");
-    setEmailError(email === "");
-    setMessageError(message === "");
+    setNameError(isNameMissing);
+    setEmailError(isEmailMissing);
+    setMessageError(isMessageMissing);
 
-    /* Uncomment below if you want to enable the emailJS */
+    if (isNameMissing || isEmailMissing || isMessageMissing) {
+      setSubmissionStatus("idle");
+      return;
+    }
 
-    // if (name !== '' && email !== '' && message !== '') {
-    //   var templateParams = {
-    //     name: name,
-    //     email: email,
-    //     message: message
-    //   };
+    setSubmissionStatus("sending");
 
-    //   console.log(templateParams);
-    //   emailjs.send('service_q6sxecl', 'template_hun900c', templateParams, 'dxtrYSbDs56rgvlST').then(
-    //     (response) => {
-    //       console.log('SUCCESS!', response.status, response.text);
-    //     },
-    //     (error) => {
-    //       console.log('FAILED...', error);
-    //     },
-    //   );
-    //   setName('');
-    //   setEmail('');
-    //   setMessage('');
-    // }
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          name: trimmedName,
+          email: trimmedEmail,
+          message: trimmedMessage,
+        },
+        { publicKey: EMAILJS_PUBLIC_KEY },
+      );
+
+      setName("");
+      setEmail("");
+      setMessage("");
+      setSubmissionStatus("success");
+    } catch (error) {
+      console.error("EmailJS submission failed", error);
+      setSubmissionStatus("error");
+    }
   };
 
   return (
@@ -53,10 +71,10 @@ function Contact() {
       <div className="items-container">
         <div className="contact_wrapper">
           <h1>Contact Me</h1>
-          <p>Feel free to reach out to me through this form!</p>
+          <p>Tell me anything through this form!</p>
           <Box
-            ref={form}
             component="form"
+            onSubmit={handleSubmit}
             noValidate
             autoComplete="off"
             className="contact-form"
@@ -64,7 +82,7 @@ function Contact() {
             <div className="form-flex">
               <TextField
                 required
-                id="outlined-required"
+                id="contact-name"
                 label="Your Name"
                 placeholder="What's your name?"
                 value={name}
@@ -76,7 +94,7 @@ function Contact() {
               />
               <TextField
                 required
-                id="outlined-required"
+                id="contact-info"
                 label="Email / Phone"
                 placeholder="How can I reach you?"
                 value={email}
@@ -91,7 +109,7 @@ function Contact() {
             </div>
             <TextField
               required
-              id="outlined-multiline-static"
+              id="contact-message"
               label="Message"
               placeholder="Send me any inquiries or questions"
               multiline
@@ -104,12 +122,25 @@ function Contact() {
               error={messageError}
               helperText={messageError ? "Please enter the message" : ""}
             />
+            {submissionStatus !== "idle" && (
+              <p
+                className={`contact-status contact-status--${submissionStatus}`}
+                role="status"
+              >
+                {submissionStatus === "sending" && "Sending your message..."}
+                {submissionStatus === "success" &&
+                  "Your message was sent successfully."}
+                {submissionStatus === "error" &&
+                  "Your message could not be sent. Please try again."}
+              </p>
+            )}
             <Button
+              type="submit"
               variant="contained"
               endIcon={<SendIcon />}
-              onClick={sendEmail}
+              disabled={submissionStatus === "sending"}
             >
-              Send
+              {submissionStatus === "sending" ? "Sending" : "Send"}
             </Button>
           </Box>
         </div>
