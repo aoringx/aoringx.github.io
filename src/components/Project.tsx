@@ -44,7 +44,7 @@ const projects: ProjectItem[] = [
     title: "Bakepedia",
     date: "July 2026 - Present",
     description:
-      "Programmed an online Baking Recipe Crawler that parses the Recipe ingredients, instructions, and tips with LLM and presents the organized information to the user in a readable manner.",
+      "Developed a FastAPI-based baking recipe crawler that extracts ingredients, instructions, and tips from recipe webpages, uses an LLM to organize and validate the content, and presents it through a clean interface with Microsoft Word export.",
     url: "https://github.com/aoringx/RecipeR",
     image: bakepedia,
     imageAlt: "Bakepedia project placeholder",
