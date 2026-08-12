@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.a25497b5.css",
-    "main.js": "/static/js/main.e940e2f2.js",
+    "main.js": "/static/js/main.274bbf3e.js",
     "static/js/453.3ce7120f.chunk.js": "/static/js/453.3ce7120f.chunk.js",
     "static/media/lockedown.jpeg": "/static/media/lockedown.530ef1fa0058c41f9273.jpeg",
-    "static/media/reciper.png": "/static/media/reciper.101327e0686c3d2537c5.png",
+    "static/media/bettersleep.png": "/static/media/bettersleep.588e90d87def028362a0.png",
+    "static/media/bakepedia.png": "/static/media/bakepedia.101327e0686c3d2537c5.png",
     "static/media/timer.png": "/static/media/timer.26202859adcfedde53be.png",
     "static/media/evie.png": "/static/media/evie.acb0f83679591aaf84c6.png",
     "static/media/bg-light.png": "/static/media/bg-light.bac0efb485244a522981.png",
@@ -23,11 +24,11 @@
     "static/media/project-placeholder.svg": "/static/media/project-placeholder.adca41589d1ae68592d293d678ee9431.svg",
     "index.html": "/index.html",
     "main.a25497b5.css.map": "/static/css/main.a25497b5.css.map",
-    "main.e940e2f2.js.map": "/static/js/main.e940e2f2.js.map",
+    "main.274bbf3e.js.map": "/static/js/main.274bbf3e.js.map",
     "453.3ce7120f.chunk.js.map": "/static/js/453.3ce7120f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a25497b5.css",
-    "static/js/main.e940e2f2.js"
+    "static/js/main.274bbf3e.js"
   ]
 }
