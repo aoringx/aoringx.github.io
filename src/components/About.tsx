@@ -13,7 +13,8 @@ const labelsFirst = [
   "Pandas",
   "Machine Learning",
   "Deep Learning",
-  "LLMs",
+  "LLM",
+  "vLLM",
   "NLP",
 ];
 
@@ -27,20 +28,19 @@ const labelsSecond = [
   "HTML5",
   "CSS3",
   "SASS",
-  "Python",
+  "Swift",
   "Git",
-  "Docker",
 ];
 
 const labelsThird = [
+  "PCB Design and Fabrication",
   "C/C++",
   "SystemVerilog",
+  "Verilog",
   "ARMv7",
   "STM32",
   "ESP32",
   "FPGA",
-  "Embedded Systems",
-  "Computer Architecture",
   "Linux",
 ];
 
@@ -78,10 +78,9 @@ function About() {
           >
             the University of Michigan
           </a>
-          . <br></br>My interests lie in novel computer architectures for ML
-          optimization and ML-driven embedded systems with a focus on building
-          portable and user-centered computer devices. <br></br>I'm currently
-          working as a student researcher in the{" "}
+          . <br></br>My research interests lie in ML-driven systems with a focus
+          on building efficient, portable, and user-centered computer devices.{" "}
+          <br></br>I'm currently working as a student researcher in the{" "}
           <a
             href="https://theisclab.com/"
             target="_blank"
@@ -118,19 +117,19 @@ function About() {
             Lu Wang
           </a>
           . My ongoing research work explores embedded systems for processing
-          audio signals from microphone arrays to perform sound classification
-          and analysis. <br></br>Outside of academics, I am a free-style hip-hop
-          dancer, and I also enjoy swimming, badminton, and snowboarding.
+          audio signals from microphone arrays to perform sound diarization and
+          analysis. <br></br>Outside of academics, I enjoy freestyle hip-hop
+          dancing, swimming, and calisthenics. I also love to cook and bake.
         </p>
 
         <div className="skills-grid">
           <div className="skill">
             <FontAwesomeIcon icon={faBrain} size="3x" />
-            <h3>Machine Learning</h3>
+            <h3>Machine Learning & AI</h3>
             <p>
-              I built Machine Learning systems to process medical imaging data.
-              I also curated training datasets, benchmarked leading LLMs, and
-              developed ML architectures for domain adversarial training.
+              Implemented machine learning systems for medical imaging analysis,
+              curated high-quality training datasets, benchmarked leading LLMs,
+              and built LLM inference applications for workflow automation.
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>
@@ -142,11 +141,11 @@ function About() {
 
           <div className="skill">
             <FontAwesomeIcon icon={faReact} size="3x" />
-            <h3>Full-stack Web Development</h3>
+            <h3>Software Development</h3>
             <p>
-              I developed full-stack platforms that integrate modern web
-              technologies with AI-assisted workflows, utilizing databases,
-              APIs, and AI agents to create seamless user experiences.
+              Developed full-stack web platforms and iOS/desktop applications
+              that integrate AI-assisted workflows, leveraging databases, web
+              APIs, and LLMs to deliver seamless, intelligent user experiences.
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>
@@ -160,9 +159,9 @@ function About() {
             <FontAwesomeIcon icon={faRobot} size="3x" />
             <h3>Embedded Systems & Computer Architecture</h3>
             <p>
-              I designed hardware and embedded systems, ranging from wearable
-              devices to out-of-order CPU architectures and FPGA-based compuiter
-              systems.
+              Designed and fabricated custom laser-cut PCBs for wearable
+              devices, engineered out-of-order CPU architectures, and built
+              FPGA-based computing systems.
             </p>
             <div className="flex-chips">
               <span className="chip-title">Tech stack:</span>

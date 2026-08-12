@@ -1,11 +1,12 @@
 import armed from "../assets/images/armed.jpeg";
+import bettersleep from "../assets/images/bettersleep.png";
 import brain from "../assets/images/brain.png";
 import classifier from "../assets/images/classifier.png";
 import evie from "../assets/images/evie.png";
 import lockedown from "../assets/images/lockedown.jpeg";
 import processor from "../assets/images/processor.png";
 import projectPlaceholder from "../assets/images/project-placeholder.svg";
-import reciper from "../assets/images/reciper.png";
+import bakepedia from "../assets/images/bakepedia.png";
 import workoutTimer from "../assets/images/timer.png";
 import vip from "../assets/images/vip.png";
 import yoshi from "../assets/images/yoshi.png";
@@ -22,22 +23,31 @@ type ProjectItem = {
 
 const projects: ProjectItem[] = [
   {
-    title: "Calisthenics Workout Timer",
+    title: "Better Sleep",
     date: "July 2026 - Present",
     description:
-      "Built a SwiftUI-based iOS calisthenics workout timer that lets users manage exercises, create custom routines, and track sets, reps or timed holds, and rest periods.",
+      "Developed a native iOS sleeping companion combining customizable guided breathing with abient noise, helping users relax and transition into sleep. (Worked for me...)",
+    url: "https://github.com/aoringx/BetterSleep",
+    image: bettersleep,
+    imageAlt: "BetterSleep project placeholder",
+  },
+  {
+    title: "Workout Timer",
+    date: "July 2026 - Present",
+    description:
+      "Built a SwiftUI workout timer for calisthenics and breaking, featuring customizable exercises and routines with set, rep, and rest-interval tracking.",
     url: "https://github.com/aoringx/WorkoutTimer",
     image: workoutTimer,
     imageAlt: "WorkoutTimer project placeholder",
   },
   {
-    title: "Reciper",
+    title: "Bakepedia",
     date: "July 2026 - Present",
     description:
-      "Programmed an online Recipe Crawler that parses the Recipe ingredients, instructions, and tips with LLM and presents the organized information to the user in a readable manner.",
+      "Programmed an online Baking Recipe Crawler that parses the Recipe ingredients, instructions, and tips with LLM and presents the organized information to the user in a readable manner.",
     url: "https://github.com/aoringx/RecipeR",
-    image: reciper,
-    imageAlt: "Reciper project placeholder",
+    image: bakepedia,
+    imageAlt: "Bakepedia project placeholder",
   },
   {
     title: "SLR Agent",
