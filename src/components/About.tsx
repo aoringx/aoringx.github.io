@@ -117,9 +117,10 @@ function About() {
             Lu Wang
           </a>
           . My ongoing research work explores embedded systems for processing
-          audio signals from microphone arrays to perform sound diarization and
-          analysis. <br></br>Outside of academics, I enjoy freestyle hip-hop
-          dancing, swimming, and calisthenics. I also love to cook and bake.
+          signals from microphone arrays to perform speaker diarization and
+          audio analysis. <br></br>Outside of academics, I enjoy freestyle
+          hip-hop dancing, swimming, and calisthenics. I also love to cook and
+          bake.
         </p>
 
         <div className="skills-grid">

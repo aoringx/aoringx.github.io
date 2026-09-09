@@ -20,6 +20,14 @@ const RESEARCH_ROWS: ResearchItem[] = [
       { label: "Website", url: "https://liveoibench.github.io" },
     ],
   },
+  {
+    title:
+      "Precision As You Need: A Stochastic-Computing Mixture-of-Precision Neural Network Accelerator",
+    conference: "HPCA 2027 (Preprint)",
+    authors:
+      "Haoran Jin, Barry Lyu, Kangqi Zhang, Jirong Yang, Soren Walther, Jonathan Postelnik, Rachel Ding, Justin Shin, Cheng Chiu, Aaron Xiong, Nathan Bleier",
+    links: [{ label: "Paper", url: "" }],
+  },
 ];
 
 const HIGHLIGHTED_AUTHOR = "Aaron Xiong";

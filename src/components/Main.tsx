@@ -2,7 +2,7 @@ import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
-import ProfilePicture from "../assets/images/pfp.jpeg";
+import ProfilePicture from "../assets/images/pfp1.jpeg";
 import SchoolIcon from "@mui/icons-material/School";
 import "../assets/styles/Main.scss";
 
